@@ -1,0 +1,19 @@
+Rules:
+
+1 separate by coin
+2. match sales with purchases in a FIFO manner
+3. if a sale does not happen in the specified tax year, that record is not relevent
+
+
+two fifo queues for each coin: buy/earn, sell
+
+{
+	'BTC': {
+		'Earned': [],
+		'Buy': [],
+		'Sell': [],
+	},
+
+	...
+
+}
